@@ -1,0 +1,12 @@
+node_modules
+www/2020
+www/2020-root-static.zip
+www/data/black-box
+www/data/book-arts
+www/data/new-media
+www/data/open-call
+www/data/open-call-resized
+www/data/csv
+www/data/format*
+www/data/resize*
+www/data/json/*-original.json
