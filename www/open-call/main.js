@@ -66,7 +66,7 @@ const wtxt = new WallText({
 const header = window.createHeader(wtxt)
 
 const music = new Music({
-  name: 'homepage_reverb_nodrums',
+  name: 'opencall',
   ele: header.querySelector('#sound-icon')
 })
 

@@ -214,8 +214,8 @@ class WallText {
       document.body.appendChild(this.card)
     }
 
-    const name = art.artist.replace(/ /g, '-')
-    const piece = art.title.replace(/ /g, '-')
+    const name = art.artist.replace(/ /g, '_')
+    const piece = art.title.replace(/ /g, '_')
     window.location.hash = name + '/' + piece
 
     this.card.innerHTML = `
@@ -266,8 +266,8 @@ class WallText {
   parseHash () {
     if (window.location.hash) {
       const url = window.location.hash.split('/')
-      url[0] = url[0].substr(1).split('-').join(' ')
-      url[1] = url[1].split('-').join(' ')
+      url[0] = url[0].substr(1).split('_').join(' ')
+      url[1] = url[1].split('_').join(' ')
       return url
     }
   }
