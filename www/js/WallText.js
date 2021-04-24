@@ -256,6 +256,9 @@ class WallText {
       })
     } else document.querySelector('#openProfile').style.display = 'none'
     document.querySelector('#inspectWork').addEventListener('click', () => {
+      if (music && music.audio && !music.audio.paused) {
+        document.querySelector('#sound-icon').click()
+      }
       if (this.onInspectClick) this.onInspectClick(art)
     })
   }

@@ -161,12 +161,13 @@ header > * {
 
 #main-menu {
   position: fixed;
-  bottom: 0;
+  bottom: 1.5vw;
   left: 0;
   z-index: 8000;
   width: 100vw;
   padding: 0vw 1vw 2vw 1vw;
   font-size: 2vw;
+  font-weight: bold;
   display: flex;
   justify-content: space-around;
   cursor: var(--pointerX3);
@@ -176,4 +177,21 @@ header > * {
 #main-menu > span:hover {
   cursor: url(../images/pointer--white.svg) 5 0, auto;
   color: #fff;
+}
+
+.left, .right {
+  display: none;
+  position: absolute;
+  top: calc(50vh - 6vw);
+  z-index: 8000;
+  font-size: 6vw;
+  font-family: 'uni0553';
+}
+
+.left {
+  left: 1vw;
+}
+
+.right {
+  right: 1vw;
 }

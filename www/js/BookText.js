@@ -138,8 +138,8 @@ class BookText {
     #closeWork {
       cursor: url(../images/pointer.svg) 5 0, auto;
       position: fixed;
-      top: 2vw;
-      right: 6vw;
+      top: 6.5vw;
+      right: 3vw;
       font-size: 3vw;
     }
     `
@@ -297,9 +297,15 @@ class BookText {
     } else this.page.querySelector('#openProfile').style.display = 'none'
 
     this.page.querySelector('.cover').onclick = () => {
+      if (music && music.audio && !music.audio.paused) {
+        document.querySelector('#sound-icon').click()
+      }
       if (this.onInspectClick) this.onInspectClick(art)
     }
     this.page.querySelector('#inspectWork').onclick = () => {
+      if (music && music.audio && !music.audio.paused) {
+        document.querySelector('#sound-icon').click()
+      }
       if (this.onInspectClick) this.onInspectClick(art)
     }
   }

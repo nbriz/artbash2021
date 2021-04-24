@@ -1,5 +1,5 @@
 /* global THREE, CyberSpace, BGGradient, WallText,
-TWEEN, NewMediaLaptop, GradShaderMaterial, dat */
+Music, NewMediaLaptop, GradShaderMaterial, dat */
 const bg = new BGGradient('#e07f88', '#3e6286')
 
 const dis = window.createDisclaimer()
@@ -19,13 +19,17 @@ const load = window.createLoader(() => {
   dis.style.display = 'none'
   header.style.display = 'flex'
   World.show()
+  music.play()
+  document.querySelectorAll('.arrow').forEach(ele => {
+    ele.style.display = 'block'
+  })
   if (wtxt.parseHash() instanceof Array) {
     wtxt.checkURLHash()
   }
 })
 
 const wtxt = new WallText({
-  title: 'Black Box',
+  title: 'New Media',
   info: '',
   onHashLoad: function (w) {
     setTimeout(() => {
@@ -67,6 +71,11 @@ const wtxt = new WallText({
 })
 
 const header = window.createHeader(wtxt)
+
+const music = new Music({
+  name: 'newmedia',
+  ele: header.querySelector('#sound-icon')
+})
 
 class Gallery extends CyberSpace {
   constructor (opts) {

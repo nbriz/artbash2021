@@ -10,7 +10,7 @@ window.createHeader = function (wtxt, homepage) {
       ${leftCorner}
     </span>
     <img src="../images/menu.svg" alt="menu">
-    <img src="../images/sound-off.svg" alt="menu" style="margin-top: 5vw;">`
+    <img src="../images/sound-on.svg" alt="menu" id="sound-icon">`
 
   const ab = header.querySelector('#ab2021')
   ab.style.fontFamily = 'uni0553'
@@ -22,6 +22,10 @@ window.createHeader = function (wtxt, homepage) {
     if (homepage) window.location = 'https://www.saic.edu/academics/departments/contemporary-practices'
     else window.location = '/'
   })
+
+  const si = header.querySelector('#sound-icon')
+  si.style.marginTop = '5vw'
+  si.style.cursor = 'url(../images/pointer--white.svg) 5 0, auto'
 
   const m = header.querySelector('[alt="menu"]')
   const css = document.querySelector(':root')

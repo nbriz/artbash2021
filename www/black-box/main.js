@@ -19,6 +19,10 @@ const load = window.createLoader(() => {
   dis.style.display = 'none'
   header.style.display = 'flex'
   World.show()
+  music.play()
+  document.querySelectorAll('.arrow').forEach(ele => {
+    ele.style.display = 'block'
+  })
   if (wtxt.parseHash() instanceof Array) {
     wtxt.checkURLHash()
   }
@@ -58,6 +62,11 @@ const wtxt = new WallText({
 })
 
 const header = window.createHeader(wtxt)
+
+const music = new Music({
+  name: 'blackbox',
+  ele: header.querySelector('#sound-icon')
+})
 
 class Gallery extends CyberSpace {
   constructor (opts) {

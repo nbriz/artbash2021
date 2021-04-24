@@ -1,5 +1,5 @@
 /* global THREE, TWEEN, CyberSpace, BGGradient, WallText,
-PictureFrame */
+PictureFrame, Music */
 const bg = new BGGradient('#efd9db', '#4d479f')
 
 const FRAME = new PictureFrame()
@@ -21,6 +21,7 @@ const load = window.createLoader(() => {
   header.style.display = 'flex'
   World.startSpin()
   World.show()
+  music.play()
   if (wtxt.parseHash() instanceof Array) {
     wtxt.checkURLHash()
   }
@@ -63,6 +64,11 @@ const wtxt = new WallText({
 })
 
 const header = window.createHeader(wtxt)
+
+const music = new Music({
+  name: 'homepage_reverb_nodrums',
+  ele: header.querySelector('#sound-icon')
+})
 
 class Gallery extends CyberSpace {
   constructor (opts) {

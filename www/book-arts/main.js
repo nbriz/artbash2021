@@ -1,4 +1,4 @@
-/* global THREE, TWEEN, CyberSpace, BGGradient, BookText, Book */
+/* global THREE, TWEEN, CyberSpace, BGGradient, BookText, Book, Music */
 const bg = new BGGradient('#bdd9a8', '#4795a2')
 
 const dis = window.createDisclaimer()
@@ -18,6 +18,7 @@ const load = window.createLoader(() => {
   dis.style.display = 'none'
   header.style.display = 'flex'
   World.show()
+  music.play()
   if (wtxt.parseHash() instanceof Array) {
     wtxt.checkURLHash()
   }
@@ -66,6 +67,11 @@ const wtxt = new BookText({
 })
 
 const header = window.createHeader(wtxt)
+
+const music = new Music({
+  name: 'bookarts',
+  ele: header.querySelector('#sound-icon')
+})
 
 class Gallery extends CyberSpace {
   constructor (opts) {

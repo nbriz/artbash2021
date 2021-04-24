@@ -1,5 +1,5 @@
 /* global THREE, CyberSpace, GradShaderMaterial, TWEEN,
-BGGradient, Ocean, RetroText, AniSprite, Maths, WallText */
+BGGradient, Ocean, RetroText, AniSprite, Maths, WallText, Music */
 const bg = new BGGradient('#37808f', '#374872')
 // const perlin = new THREE.ImprovedNoise()
 const dis = window.createDisclaimer()
@@ -12,6 +12,7 @@ const load = window.createLoader(() => {
   header.style.display = 'flex'
   document.querySelector('#main-menu').style.display = 'flex'
   World.show()
+  music.play()
   if (wtxt.parseHash() instanceof Array) wtxt.checkURLHash()
 })
 
@@ -21,6 +22,11 @@ const wtxt = new WallText({
 })
 
 const header = window.createHeader(wtxt, true)
+
+const music = new Music({
+  name: 'homepage',
+  ele: header.querySelector('#sound-icon')
+})
 
 class Gallery extends CyberSpace {
   constructor (opts) {
@@ -99,6 +105,7 @@ class Gallery extends CyberSpace {
           const obj = this.meshes[2]
           obj.position.set(1.732, 3.777, 6.018)
           obj.material = this.shader.material
+          this.initDisks(obj)
           this.scene.add(obj)
           load.update(0.75)
           this.loadGLTF('cat.gltf', () => {
@@ -115,6 +122,12 @@ class Gallery extends CyberSpace {
         })
       })
     })
+  }
+
+  initDisks (obj) {
+    // this.disk1 = obj
+    // this.disk2 = obj.clone()
+    // this.scene.add(this.disk2)
   }
 
   loadSprites () {
@@ -293,7 +306,7 @@ class Gallery extends CyberSpace {
       this.ocean.still = true
       const txt = this.texts[this.inserted].group
       new TWEEN.Tween(txt.position)
-        .to({ z: 1.7 }, time)
+        .to({ z: 1.7 }, time * 0.5)
         .easing(TWEEN.Easing.Quadratic.InOut)
         .onComplete(() => {
           setTimeout(() => {
@@ -327,6 +340,7 @@ class Gallery extends CyberSpace {
     this.clicked = url
     document.querySelector('#main-menu').style.opacity = 0
     header.style.opacity = 0
+    music.pause()
     this.goToGallery()
   }
 
