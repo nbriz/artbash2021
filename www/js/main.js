@@ -19,14 +19,22 @@ const load = window.createLoader(() => {
 const wtxt = new WallText({
   title: 'Art Bash 2021',
   info: `
-  <p>ArtBash is the Department of Contemporary Practices' major end of the year exhibition of student work developed out of their interdisciplinary studio courses in the department. ArtBash 2021's exhibition takes place on campus and online at artbash.party.</p>
 
-  <p>Artbash Coordinator, Sarah Belknap; web design/development and digital consulting, <a href="http://nickbriz.com/" target="_blank">Nick Briz</a>; digital instruction and support, Tom Burtonwood and Skelly; Black Box and Inter-Action lead, Christine Shallenberg; Assistant Director of Exhibitions & Staff Advisor to SITE, Lindsey Barlag Thornton; preparators - Joseph Belknap, Larry Lee, Andy Roche, Marcus Thinh Anthony Thibodeau, and Maggie Wong.</p>
+  <p>Artbash is the annual exhibition by SAIC students completing their first year of interdisciplinary studio classes in the Department Contemporary Practices, CP. The department is both foundational and contemporary, continually responding to what art and design education should and can be at any given moment.</p>
 
-  <p>Music: <a href="http://jagourley.com/" target="_blank">Julian Gourley</a></p>
-  <p>Branding/Identity: <a href="https://www.renaise.com/" target="_blank">Renaise Kim</a>/p>
+  <p>In the <a href="2020" target="_blank">spring of 2020</a>, within days of learning that the school was moving to remote learning, CP responded by moving Artbash online by creating an exhibition webstite, Artbash.party. What was important to us was to not simply post work on a website but to design a website for the exhibition and to support students transforming and re-making work for the internet.</p>
 
-  <p>And a special thanks to all of the amazing students who poured their hearts into their work this past year!</p>
+  <p>This year, Artbash and Artbash.party reflects our past year of learning and making both online and in person. All students were invited to propose work for Artbash.party in our various categories: InterAction (performance/sound); BlackBox (film, video, animation, light and sound) and New Media. On campus students were able to make proposals for an on-campus exhibition, located at the Neiman Center and gallery. Images of this work can be seen in Artbash.party under Sight/Site. All CP students could submit work to exhibit in Artbash.party through Open Call and Book Arts.</p>
+
+  <p>Throughout this past year, whether online or social distancing with masks on campus, CP students and faculty continued to engage and support one another in discovering what is truly essential in creating art and design and what new possibilities there are for creative practices.</p>
+
+  <p>Faculty artist <a href="http://nickbriz.com/" target="_blank">Nick Briz</a>, created Artbash.party in 2020 and re-created the site for the work of 2021, with music by CP student <a href="http://jagourley.com/" target="_blank">Julian Gourley</a> and integrating this year’s Artbash logo design created by <a href="https://www.renaise.com/" target="_blank">Renaise Kim</a>; the chosen design was developed from the upper-level Vis Com class d-studio taught by Mark Stammers.</a>
+
+  <p>Immense gratitude goes to our Artbash Coordinator, Sarah Belknap who oversaw production of the exhibition and provided extensive support to all of our students in developing their projects and sharing their work online and on campus; Nick Briz for his website creation and digital support; and Christine Shallenberger who oversaw Blackbox and led InterAction, working alongside students to realize their performances. Special thanks to our faculty who supported our students both on campus and online to realize their work: Joseph Belknap, Tom Burtonwood, Larry Lee, Andy Roche, Marcus Thinh Anthony Thibodeau, and Maggie Wong.</p>
+
+  <p>Finally, thank you to all of CP’s faculty, staff and students over this past year for all of their indefatigable energy and creativity in engaging with, challenging and re-imaging our world through art, design and a range of creative practices.</p>
+
+  <p>Amy Vogel<br>Director of Contemporary Practices</p>
   `
 })
 
