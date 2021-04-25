@@ -30,7 +30,7 @@ const load = window.createLoader(() => {
 
 const wtxt = new WallText({
   title: 'Black Box',
-  info: '',
+  info: 'The works in Black Box explore the potential of the screen, light, projection, and sound. Spectators are invited to take part in an immersive experience of linear time-based Video work.',
   onHashLoad: function (w) {
     setTimeout(() => {
       World.select(World.find(w))

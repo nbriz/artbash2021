@@ -18,7 +18,16 @@ const load = window.createLoader(() => {
 
 const wtxt = new WallText({
   title: 'Art Bash 2021',
-  info: 'artbash info goes here'
+  info: `
+  <p>ArtBash is the Department of Contemporary Practices' major end of the year exhibition of student work developed out of their interdisciplinary studio courses in the department. ArtBash 2021's exhibition takes place on campus and online at artbash.party.</p>
+
+  <p>Artbash Coordinator, Sarah Belknap; web design/development and digital consulting, <a href="http://nickbriz.com/" target="_blank">Nick Briz</a>; digital instruction and support, Tom Burtonwood and Skelly; Black Box and Inter-Action lead, Christine Shallenberg; Assistant Director of Exhibitions & Staff Advisor to SITE, Lindsey Barlag Thornton; preparators - Joseph Belknap, Larry Lee, Andy Roche, Marcus Thinh Anthony Thibodeau, and Maggie Wong.</p>
+
+  <p>Music: <a href="http://jagourley.com/" target="_blank">Julian Gourley</a></p>
+  <p>Branding/Identity: <a href="https://www.renaise.com/" target="_blank">Renaise Kim</a>/p>
+
+  <p>And a special thanks to all of the amazing students who poured their hearts into their work this past year!</p>
+  `
 })
 
 const header = window.createHeader(wtxt, true)

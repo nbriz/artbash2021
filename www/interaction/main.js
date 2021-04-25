@@ -1,5 +1,4 @@
-/* global THREE, TWEEN, CyberSpace, BGGradient, WallText , RetroText, AniSprite,
-FloppyDisk, GradShaderMaterial */
+/* global THREE, TWEEN, CyberSpace, BGGradient, WallText, GradShaderMaterial, Music */
 const bg = new BGGradient('#e59bef', '#6494eb')
 
 const dis = window.createDisclaimer()
@@ -23,8 +22,8 @@ const load = window.createLoader(() => {
 })
 
 const wtxt = new WallText({
-  title: 'Interaction',
-  info: '',
+  title: 'Inter-Action',
+  info: 'Inter-Action is a showcase of recorded performance and sound works by CP students. This dynamic event features performance pieces, ranging from short vignettes to more durational pieces without a definitive beginning or end.',
   onHashLoad: function (w) {
     this.displayTitleCard(w)
     setTimeout(() => {
@@ -62,7 +61,7 @@ const wtxt = new WallText({
 const header = window.createHeader(wtxt)
 
 const music = new Music({
-  name: 'opencall',
+  name: 'interaction',
   ele: header.querySelector('#sound-icon')
 })
 

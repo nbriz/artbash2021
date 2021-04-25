@@ -15,7 +15,7 @@ class BGGradient {
     this.ctx = this.canvas.getContext('2d')
     this.canvas.width = window.innerWidth
     this.canvas.height = window.innerHeight
-    this.canvas.style.position = 'absolute'
+    this.canvas.style.position = 'fixed'
     this.canvas.style.left = '0px'
     this.canvas.style.top = '0px'
     this.canvas.style.zIndex = '-2'

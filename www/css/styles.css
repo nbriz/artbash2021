@@ -95,6 +95,8 @@ canvas {
   cursor: var(--pointerX3);
 }
 
+a { color: #fff; }
+
 header {
   position: fixed;
   top: 0px;

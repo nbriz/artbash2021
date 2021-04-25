@@ -30,7 +30,7 @@ const load = window.createLoader(() => {
 
 const wtxt = new WallText({
   title: 'New Media',
-  info: '',
+  info: 'The works in New Media consider the web as a site for performance, web based projects, GIFS, photogrammetry and 3D applications.',
   onHashLoad: function (w) {
     setTimeout(() => {
       World.select(World.find(w))
