@@ -125,9 +125,10 @@ header > * {
   align-items: center;
   position: fixed;
   z-index: 9000;
+  flex-direction: column;
 }
 
-.loader > div {
+.loader > .btn {
   font-family: 'uni0553';
   background: #000;
   color: #fff;
@@ -137,6 +138,17 @@ header > * {
   text-align: center;
   /* padding: 1vw 0vw; */
   padding: 0.4vw 0vw 1vw 0vw;
+}
+
+.loader > .instructions {
+  font-size: 1vw;
+  margin-top: 2vw;
+  text-align: center;
+}
+
+.loader > .instructions > img {
+  width: 2vw;
+  transform: translateY(0.6vw);
 }
 
 .fadeIn {

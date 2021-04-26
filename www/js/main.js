@@ -14,7 +14,7 @@ const load = window.createLoader(() => {
   World.show()
   music.play()
   if (wtxt.parseHash() instanceof Array) wtxt.checkURLHash()
-})
+}, true)
 
 const wtxt = new WallText({
   title: 'Art Bash 2021',
